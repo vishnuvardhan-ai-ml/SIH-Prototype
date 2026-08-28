@@ -16,14 +16,21 @@ from backend.app.core.errors import (
     validation_exception_handler,
 )
 from backend.app.core.logging import logger, setup_logging
+from backend.app.database.session import init_db
 
 
 def create_application() -> FastAPI:
     """
-    Application factory initializing FastAPI, middleware, routers, and exception handlers.
+    Application factory initializing FastAPI, database, middleware, routers, and exception handlers.
     """
     setup_logging()
     logger.info("Initializing SIH Risk Prediction API Application...")
+
+    # Initialize SQLite Database Tables
+    try:
+        init_db()
+    except Exception as e:
+        logger.error(f"Database initialization failed: {e}")
 
     application = FastAPI(
         title=settings.PROJECT_NAME,

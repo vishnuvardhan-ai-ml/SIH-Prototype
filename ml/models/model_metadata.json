@@ -1,0 +1,46 @@
+{
+  "training_timestamp": "2026-08-28T18:44:37.962855Z",
+  "dataset_samples": 2500,
+  "feature_names": [
+    "land_area",
+    "affected_families",
+    "legal_disputes",
+    "pending_approvals",
+    "compensation_percent",
+    "rr_progress_percent",
+    "possession_percent",
+    "families_per_acre",
+    "milestone_completion_index",
+    "litigation_approval_burden",
+    "project_type_Energy & Power",
+    "project_type_Highway",
+    "project_type_Industrial Corridor",
+    "project_type_Railway",
+    "project_type_Urban Infrastructure"
+  ],
+  "input_features": [
+    "project_type",
+    "land_area",
+    "affected_families",
+    "legal_disputes",
+    "pending_approvals",
+    "compensation_percent",
+    "rr_progress_percent",
+    "possession_percent",
+    "families_per_acre",
+    "milestone_completion_index",
+    "litigation_approval_burden"
+  ],
+  "selected_classifier": "GradientBoostingClassifier",
+  "classifier_metrics": {
+    "accuracy": 0.972,
+    "f1_score": 0.9853862212943633,
+    "roc_auc": 0.9823920804933464
+  },
+  "selected_regressor": "GradientBoostingRegressor",
+  "regressor_metrics": {
+    "mae": 23.240464353649426,
+    "rmse": 34.37304027611924,
+    "r2_score": 0.8327674403567119
+  }
+}
