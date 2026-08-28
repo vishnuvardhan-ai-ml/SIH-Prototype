@@ -1,0 +1,32 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secrets
+.env
+.env.local
+*.secret
+
+# SQLite Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Logs & Temp Files
+*.log
+scratch/
+tmp/
